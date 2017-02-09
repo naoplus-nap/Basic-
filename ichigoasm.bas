@@ -22,7 +22,7 @@ ARRAY.LOAD asmcom$[], "Rd = u8", "Rd = rm"~
  "IF 0 GOTO n8 << 1", "IF !0 GOTO n8 << 1"~
  "GOTO n11 << 1", "GOTO Rd", "RET (=#4770)","CALL Rd"~
  "PUSH regs", "POP regs", "CPSID (=#B672)"~
- "CPSIE (=#B662)", "WFI (=#BF30)", "NOP (=0)"~
+ "CPSIE (=#B662)", "WFI (=#BF30)", "NOP (=0)"
 
 DIALOG.MESSAGE ,"Use SELECT or DIALOG.SELECT?", b, "DIALOG.SELECT", "SELECT"
 
