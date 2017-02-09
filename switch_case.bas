@@ -1,21 +1,17 @@
 ! This program demonstrates the
 ! SWITCH commands
 
-PRINT "How many days in a given month?"
+PRINT "Now selecting Assembly Commands"
 PRINT  " "
-INPUT "Enter Month Name", aname$
-name$ = LOWER$(aname$)
+asm=42
+asmcom$[asm]="RET (=#4770)"
+cname$ = asmcom$[asm]
+name$ = LOWER$(cname$)
 num_days = 0
 
 SW.BEGIN name$
- SW.CASE "january"
- SW.CASE "march"
- SW.CASE "may"
- SW.CASE "july"
- SW.CASE "august"
- SW.CASE "october"
- SW.CASE "december"
-  num_days = 31
+ SW.CASE "RET (=#4770)"
+  num_days = #4770
   SW.BREAK
 
  SW.CASE "april"
